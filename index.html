@@ -1,111 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My portfolio</title>
-</head>
-
-<body>
-    <header>
-        <div class="header">
-            <div id="logo"><img src="logo.jpg" alt="logo"></div>
-            <ul class="link_header">
-                <li><a href=#home class="blue">HOME</a></li>
-                <li><a href=#skills>SKILLS</a></li>
-                <li><a href=#about_me>ABOUT ME</a></li>
-                <li><a href=#works>WORKS</a></li>
-                <li><a href=#need_a_project>NEED A PROJECT?</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-        <div id="main_content"> <a id="home"></a>
-            <div class="main_content"><img src="main_content.jpg" alt="logo"></div>
-            <h2 class="title_main">Valentyna Mohort</h2>
-            <p class="text_main">Portfolio</p>
-        </div>
-
-        <div id="skills_content"><a id="skills"></a>
-            <h2 class="title_skills">Profesional Skiils</h2>
-            <div class="photo_me"><img src="photo_me.jpg" alt="photo_me"></div>
-            <p class="text_skills">Computer skills Microsoft Office (Word, Publisher, PowerPoint, Excel), fluent user of computer. Adobe Photoshop, Adobe Illustrator, HTML5/CSS3, Adobe InDesign/Adobe QuarkXPress, Graduated courses of basics Web UI – 2017, Lviv IT School in
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <title>Valentyna Mohort_My portfolio</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div id="logo">
+                    <img src="logo.jpg" alt="logo">
+                </div>
+                <ul class="link_header">
+                    <li>
+                        <a href=#home class="blue">HOME</a>
+                    </li>
+                    <li>
+                        <a href=#skills>SKILLS</a>
+                    </li>
+                    <li>
+                        <a href=#about_me>ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href=#works>WORKS</a>
+                    </li>
+                    <li>
+                        <a href=#need_a_project>NEED A PROJECT?</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="main_content">
+                <a id="home"></a>
+                <div class="main_content">
+                    <img src="main_content.jpg" alt="logo">
+                </div>
+                <h2 class="title_main">Valentyna Mohort</h2>
+                <p class="text_main">Portfolio</p>
+            </section>
+            <section id="skills_content">
+                <a id="skills"></a>
+                <h2 class="title_skills">Profesional Skills</h2>
+                <div class="photo_me">
+                    <img src="photo_me.jpg" alt="photo_me">
+                </div>
+                <p class="text_skills">Computer skills Microsoft Office (Word, Publisher, PowerPoint, Excel), fluent user of computer. Adobe Photoshop, Adobe Illustrator, HTML5/CSS3, Adobe InDesign/Adobe QuarkXPress, Graduated courses of basics Web UI – 2017, Lviv IT School in
                 Prometheus and course about Web Development in LOGOS.</p>
-        </div>
-
-        <div id="about_me_content"> <a id="about_me"></a>
-            <h2 class="title">About me</h2>
-            <p class="text">I am communicative and hard-working person. I have a great desire to improve myself, discover something new and get to know different people. In addition, I easily adapt to new environment.</p>
-            <div class="logo_in_about_me"><img src="logo.jpg" alt="logo"></div>
-        </div>
-
-        <div class="works_content"> <a id="works"></a>
-            <h2 class="title">Works</h2>
-            <div class="work_portfolio"><img src="work_portfolio.png" alt="work_portfolio">
-                <p class="text">Web-site about portfolio</p>
+            </section>
+            <section id="about_me_content">
+                <a id="about_me"></a>
+                <h2 class="title">About me</h2>
+                <p class="text">I am communicative and hard-working person. I have a great desire to improve myself, discover something new and get to know different people. In addition, I easily adapt to new environment.</p>
+                <div class="logo_in_about_me">
+                    <img src="logo.jpg" alt="logo">
+                </div>
+            </section>
+            <section class="works_content">
+                <a id="works"></a>
+                <h2 class="title">Works</h2>
+                <div class="work_portfolio">
+                    <img src="work_portfolio.png" alt="work_portfolio">
+                    <p class="text">Web-site about portfolio</p>
+                </div>
+                <div class="work_travel">
+                    <img src="work_travel.png" alt="work_travel">
+                    <p class="text">Web-site about travel</p>
+                </div>
+                <div class="work_newspaper">
+                    <img src="work_newspaper.jpg" alt="work_newspaper">
+                    <p class="text">Newspaper Design</p>
+                </div>
+            </section>
+            <section class="need_a_project_content">
+                <a id="need_a_project"></a>
+                <h2 class="title">Need a project?</h2>
+                <p class="text_project">Let me know what kind of project do you need and. I'll take a look and see if this could be the start of something beautiful.</p>
+            </section>
+            <div class="form">
+                <form action="https://formspree.io/valentina.mogort@gmail.com" method="POST">
+                    <label for="name"></label>
+                    <input type="text" id="name" required placeholder="Your Name" name="user_name">
+                    <label for="mail"></label>
+                    <input type="email" required id="mail" placeholder=" Your E-mail" name="user_email">
+                    <label for="form_title"></label>
+                    <textarea id="form_title" required placeholder="Your Title" name="user_title"></textarea>
+                    <label for="form_comment"></label>
+                    <textarea id="form_comment" required placeholder="Your Comment" name="user_comment"></textarea>
+                    <div id="submit">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </form>
             </div>
-            <div class="work_travel"><img src="work_travel.png" alt="work_travel">
-                <p class="text">Web-site about travel</p>
+        </main>
+        <footer>
+            <div class="copywriter">
+                <h4>Valentyna Mohort</h4>
+                <p class="footer">
+                    © 2018 Mohort All rights reserved. <br>Designed by Valentyna.
+                </p>
             </div>
-            <div class="work_newspaper"><img src="work_newspaper.jpg" alt="work_newspaper">
-                <p class="text">Newspaper Design</p>
+            <div class="contacts">
+                <p class="footer">
+                    valentina.mogort@gmail.com
+                <br>+380994536384
+                </p>
             </div>
-        </div>
-
-        <div class="need_a_project_content"><a id="need_a_project"></a>
-            <h2 class="title">Need a project?</h2>
-            <p class="text_project">Let me know what kind of project do you need and. I'll take a look and see if this could be the start of something beautiful.</p>
-        </div>
-
-        <div class="form">
-            <form action="https://formspree.io/valentina.mogort@gmail.com" method="POST">
-                <label for="name"></label>
-                <input type="text" id="name" required placeholder="Your Name" name="user_name">
-                <label for="mail"></label>
-                <input type="email" required id="mail" placeholder=" Your E-mail" name="user_email">
-                <br><br>
-                <label for="form_title"></label>
-                <textarea id="form_title" required placeholder="Your Title" name="user_title"></textarea>
-                <br><br>
-                <label for="form_comment"></label>
-                <textarea id="form_comment" required placeholder="Your Comment" name="user_comment"></textarea>
-                <br><br>
-                <div id="submit"><input type="submit" value="Send Message"></div>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div class="block_one">
-            <h4>Valentyna Mohort</h4>
-            <p class="footer">© 2018 Mohort All rights reserved. <br>Designed by Valentyna.</p>
-        </div>
-
-        <div class="block_two">
-            <p class="footer">valentina.mogort@gmail.com
-                <br>+380994536384</p>
-        </div>
-
-        <div class="block_three">
-            <ul class="links_footer">
-                <li><a href=#home>HOME</a></li>
-                <li><a href=#skills>SKILLS</a></li>
-                <li><a href=#about_me>ABOUT ME</a></li>
-                <li><a href=#works>WORKS</a></li>
-                <li><a href=#need_a_project>NEED A PROJECT?</a></li>
-            </ul>
-        </div>
-
-        <div class="block_four">
-            <h5><a href="https://www.instagram.com/kazymova_29/?hl=uk" target="_blank">Instagram</a>
-            <br><a href="https://www.facebook.com/profile.php?id=100005497816058" target="_blank">Facebook</a></h5>
-        </div>    
-    </footer>
-
-
-</body>
-
+            <div class="links">
+                <ul class="links_footer">
+                    <li>
+                        <a href=#home>HOME</a>
+                    </li>
+                    <li>
+                        <a href=#skills>SKILLS</a>
+                    </li>
+                    <li>
+                        <a href=#about_me>ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href=#works>WORKS</a>
+                    </li>
+                    <li>
+                        <a href=#need_a_project>NEED A PROJECT?</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h5>
+                    <a href="https://www.instagram.com/kazymova_29/?hl=uk" target="_blank">Instagram</a>
+                    <br>
+                    <a href="https://www.facebook.com/profile.php?id=100005497816058" target="_blank">Facebook</a>
+                </h5>
+            </div>
+        </footer>
+    </body>
 </html>
