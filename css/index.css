@@ -84,7 +84,6 @@ main .photo_me {
     width: 30%;
     margin: 0;
        
-       
 } 
 
 .title_skills {
@@ -109,3 +108,6 @@ main .photo_me {
     display: flex;
 }
 
+.link_header li:last-child {
+    margin-right: 10px;
+}
