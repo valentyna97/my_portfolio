@@ -60,7 +60,6 @@ header .link_header li a:hover {
     min-height: 400px;
     background-image: url(../img/main_content.jpg);
     background-size: cover;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,3 +74,38 @@ header .link_header li a:hover {
     position: absolute;
     bottom: 9rem;
 }
+
+main .photo_me {
+    float: right;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 30%;
+    margin: 0;
+       
+       
+} 
+
+.title_skills {
+    width: 60%;
+   margin: 0;
+    padding-left: 1rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+   
+    display: flex;
+ 
+}
+.text_skills {
+ 
+   width: 60%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    padding-right: 1rem;
+    margin: 0;
+    display: flex;
+}
+
