@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
- header .link_header {
+header .link_header {
     padding-top: 19px;
     padding-bottom: 20px;
     padding-left: 0;
@@ -17,11 +17,11 @@ body {
     margin: 0;
     justify-content: space-between;
     opacity: 0.5;
-    
+
 }
-    
+
 #logo {
-  padding: 15px;
+    padding: 15px;
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -32,7 +32,7 @@ body {
     margin: 0;
     opacity: 0.5;
 }
- 
+
 header .link_header li {
     display: inline;
 }
@@ -46,6 +46,7 @@ header .link_header li a {
 header .link_header li a:hover {
     text-decoration: underline;
 }
+
 .link_header li:last-child {
     margin-right: 10px;
 }
@@ -55,23 +56,24 @@ header .link_header li a:hover {
 }
 
 #main_content {
-    min-height: 470px;
+    min-height: 650px;
     background-image: url(../img/main_content.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
+    position: relative;
     top: 0%;
     bottom: 0%;
     left: 0;
     right: 0;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
+
 .text_main {
     position: absolute;
-    bottom:11rem;
+    bottom: 17rem;
     font-family: 'Montserrat', sans-serif;
     color: #696969;
 }
@@ -83,7 +85,8 @@ header .link_header li a:hover {
     padding-right: 0;
     padding-bottom: 0;
     display: flex;
-} 
+}
+
 .title_skills {
     margin: 0;
     padding-right: 9rem;
@@ -91,10 +94,8 @@ header .link_header li a:hover {
     display: flex;
     justify-content: flex-end;
     font-family: 'Montserrat', sans-serif;
-    
-    
- 
 }
+
 .text_skills {
     margin: 0;
     padding-right: 9rem;
@@ -106,15 +107,41 @@ header .link_header li a:hover {
     font-size: 12pt;
     color: #696969;
 }
+
 #skills_content {
     display: grid;
-    grid-template-columns: 6fr  4fr;
+    grid-template-columns: 6fr 4fr;
     text-align: right;
     align-items: center;
-    position:relative;
+    position: relative;
     top: 0%;
     bottom: 0%;
     left: 0;
     right: 0;
 }
+#about_me_content{
+    background-color: #dcd7d3;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+    
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.text_me{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    color: #696969;
+    text-align: center;
+}
+.logo_in_about_me {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7rem;
 
+}
