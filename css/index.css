@@ -392,7 +392,8 @@ header .link_header li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 269px;
+        height: 500px;
+        
         opacity: 1;
         background: none;
     }
@@ -407,21 +408,21 @@ header .link_header li a:hover {
         align-items: center;
         padding-top: 25px;
         margin-left: 0;
+        
 
     }
     #main_content {
-        min-height: 350px;
         background-image: none;
         background-color: #d5cec9;
     }
-    .photo_me{
+    .photo_me {
         min-height: 350px;
     }
     #skills_content {
-    display: flex;
-    flex-direction: column-reverse;
-    grid-template-columns: none;
-        
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: none;
+
     }
     .title_skills {
         font-size: 12px;
@@ -430,5 +431,16 @@ header .link_header li a:hover {
     .text_skills {
         font-size: 12px;
         padding: 0 1rem 1rem 1rem;
+    }
+    .title_me {
+        font-size: 12px;
+        padding-top: 3rem;
+    }
+    .text_me {
+        font-size: 12px;
+        padding: 1rem;
+    }
+    .logo_in_about_me{
+        padding-bottom: 4rem; 
     }
 }
