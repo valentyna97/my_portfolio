@@ -425,7 +425,7 @@ header .link_header li a:hover {
     }
     .title_skills {
         font-size: 12px;
-        padding: 1rem 1rem 1rem;
+        padding: 1rem 1rem 0.5rem 1rem;
     }
     .text_skills {
         font-size: 12px;
