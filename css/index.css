@@ -22,6 +22,7 @@ header .link_header {
     padding-top: 19px;
     padding-bottom: 20px;
     width: 480px;
+
     margin: 0;
     list-style-type: none;
 }
@@ -346,7 +347,7 @@ header .link_header li a:hover {
 .links_footer,
 .social {
     color: #f4f4f4;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     border: none;
     list-style-type: none;
 }
@@ -374,7 +375,6 @@ header .link_header li a:hover {
 }
 
 @media (max-width: 625px) {
-
     #logo {
         width: 50px;
         padding: 0;
@@ -393,7 +393,6 @@ header .link_header li a:hover {
         flex-direction: column;
         align-items: center;
         height: 300px;
-
         opacity: 1;
         background: none;
     }
@@ -402,7 +401,7 @@ header .link_header li a:hover {
         flex-direction: column;
         align-items: center;
         padding: 0;
-        height: 100px;
+        width: auto;
     }
     header .link_header li {
         align-items: center;
@@ -412,7 +411,7 @@ header .link_header li a:hover {
     #main_content {
         background-image: none;
         background-color: #d5cec9;
-        min-height: 400px;
+        min-height: 450px;
     }
     .title_me {
         font-size: 12px;
@@ -425,34 +424,105 @@ header .link_header li a:hover {
     .logo_in_about_me {
         padding-bottom: 4rem;
     }
-    
 }
-    @media (max-width: 745px) {
-        .photo_me {
-            min-height: 350px;
-        }
-        #skills_content {
-            display: flex;
-            flex-direction: column-reverse;
-            grid-template-columns: none;
-        }
-        .title_skills {
-            font-size: 12px;
-            padding: 1rem 1rem 0.5rem 1rem;
-        }
-        .text_skills {
-            font-size: 12px;
-            padding: 0 1rem 1rem 1rem;
-        }
+
+@media (max-width: 745px) {
+    .photo_me {
+        min-height: 350px;
     }
-    @media (max-width: 1000px) {
-        .works_title {
-        
+    #skills_content {
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: none;
+    }
+    .title_skills {
+        font-size: 12px;
+        padding: 1rem 1rem 0.5rem 1rem;
+    }
+    .text_skills {
+        font-size: 12px;
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .works_title {
+        font-size: 16px;
+        padding: 2rem;
     }
     .works {
         display: flex;
         flex-direction: column;
         grid-template-columns: none;
+    }
+
+    .about_travel {
+        width: 100%;
+    }
+}
+
+@media (max-width:560px) {
+    .title {
+        font-size: 16pt;
+    }
+    .text_project {
+        font-size: 14px;
+        padding: 0 2rem 1rem 2rem;
+    }
+    .form_name {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0.5rem;
 
     }
+    .form_for_title {
+        padding-left: 0.5rem;
+    }
+    #form_title {
+        padding: 0;
+        width: 100%;
+    }
+    .form_for_comment {
+        padding-left: 0.5rem;
+
+    }
+    #form_comment {
+        padding: 0;
+        width: 100%;
+    }
+    .mail-btn {
+        height: 30px;
+        padding: 0 1rem;
+    }
+    .footer_content {
+        grid-template-columns: 3fr 4fr 3fr;
+    }
+    .footer_contacts {
+        font-size: 10px;
+
+    }
+    .copywriter {
+        font-size: 10px;
+        padding: 1rem;
+
+    }
+    .contacts {
+        padding: 1rem 0 0 0;
+    }
+    .social {
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .social p a {
+        font-size: 8px;
+        
+    }
+    .links {
+        display: none;
+
+    }
+
 }
