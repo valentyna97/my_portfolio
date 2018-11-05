@@ -343,7 +343,6 @@ header .link_header li a:hover {
     padding: 0 1rem 1rem 1rem;
     color: #696969;
     font-size: 12pt
-
 }
 
 .footer_content {
@@ -390,7 +389,7 @@ header .link_header li a:hover {
         width: 50px;
         padding: 0;
         margin: 0;
-        margin-top: 15px;
+        margin-top: 30px;
     }
     header .title_main {
         display: none;
@@ -468,7 +467,9 @@ header .link_header li a:hover {
     }
 
     .about_travel {
-        width: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -505,6 +506,9 @@ header .link_header li a:hover {
         height: 30px;
         padding: 0 1rem;
     }
+}
+@media (max-width:700px) {
+   
     .footer_content {
         grid-template-columns: 3fr 4fr 3fr;
     }
@@ -535,5 +539,5 @@ header .link_header li a:hover {
         display: none;
 
     }
-
 }
+

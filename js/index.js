@@ -1,10 +1,12 @@
+(function () {
+
 document.querySelector('.form button[type=submit]').addEventListener('click',submitForm);
   function submitForm (e){
    e.preventDefault();
     const xhr = new XMLHttpRequest();
      xhr.onreadystatechange = function() {
          if (xhr.readyState === 4 && xhr.status ===200 ){
-             document.querySelector('.message-box').innerHTML = ' Hi! Nice to meet you! <br>We will contact with you soon';
+             document.querySelector('.message-box').innerHTML = ' Hi! Nice to meet you! <br>We will contact with you soon!';
          }else if (xhr.readyState === 4 && xhr.status !== 200){
              document.querySelector('.message-box').innerHTML += 'error!';
          }
@@ -14,4 +16,4 @@ document.querySelector('.form button[type=submit]').addEventListener('click',sub
          const data = new FormData(form);
          xhr.send(data);
   }
-  
+})();
