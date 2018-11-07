@@ -169,6 +169,7 @@ header .link_header li a:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 .work_portfolio {
     text-align: center;
 }
@@ -190,6 +191,7 @@ header .link_header li a:hover {
     justify-content: center;
     color: #696969;
 }
+
 
 .work_newspaper {
     text-align: center;
@@ -465,9 +467,19 @@ header .link_header li a:hover {
         flex-direction: column;
         grid-template-columns: none;
     }
+    .portfolio {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
     .about_travel {
-        width: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .newspaper {
+         width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -507,8 +519,9 @@ header .link_header li a:hover {
         padding: 0 1rem;
     }
 }
+
 @media (max-width:700px) {
-   
+
     .footer_content {
         grid-template-columns: 3fr 4fr 3fr;
     }
@@ -540,4 +553,3 @@ header .link_header li a:hover {
 
     }
 }
-

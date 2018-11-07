@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fancybox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/fancybox-thumbs.css" type="text/css" media="screen" />
     <title>Valentyna Mohort_My portfolio</title>
 </head>
 
 <body>
+    
     <header>
         <div id="header">
             <section id="main_content">
@@ -69,44 +72,44 @@
             <h2 class="works_title">Works</h2>
             <div class="works">
                 <div class="work_portfolio">
-                    <img src="img/work_portfolio.png" alt="work_portfolio">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/work_portfolio.png"><img src="img/work_portfolio.png" class = "portfolio" alt="work_portfolio"></a>
                     <p class="text">Web-site about portfolio</p>
                 </div>
                 <div class="work_travel">
-                    <img src="img/web_site_about_travel.png" class="about_travel" alt="work_travel">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/web_site_about_travel.png"><img src="img/web_site_about_travel.png" class="about_travel" alt="work_travel"></a>
                     <p class="text_travel">Web-site about travel</p>
                 </div>
                 <div class="work_newspaper">
-                    <img src="img/work_newspaper.jpg" alt="work_newspaper">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/work_newspaper.jpg"><img src="img/work_newspaper.jpg"  class = "newspaper" alt="work_newspaper"></a>
                     <p class="text">Newspaper Design</p>
                 </div>
             </div>
         </section>
-       
+
         <section class="form">
             <section id="need_a_project_content">
-                 <form>
-                <h2 class="title">Need a project?</h2>
-                <p class="text_project">Let me know what kind of project do you need and. I'll take a look and see if this could be the start of something beautiful.</p>
+                <form>
+                    <h2 class="title">Need a project?</h2>
+                    <p class="text_project">Let me know what kind of project do you need and. I'll take a look and see if this could be the start of something beautiful.</p>
 
-                <div class="form_name">
-                    <label for="name"></label>
-                    <input type="text" id="name" required placeholder="Your Name" name="user_name">
-                    <label for="mail"></label>
-                    <input type="email" required id="mail" placeholder=" Your E-mail" name="user_email">
-                    <label for="form_title"></label>
-                </div>
-                <div class="form_for_title">
-                    <textarea id="form_title" required placeholder="Your Title" name="user_title"></textarea>
-                </div>
-                <div class="form_for_comment">
-                    <label for="form_comment"></label>
-                    <textarea id="form_comment" required placeholder="Your Comment" name="user_comment"></textarea>
-                </div>
-                <div class="submit">
-                    <button class="mail-btn" type="submit">Send</button>
-                </div>
-                <p class="message-box"></p>
+                    <div class="form_name">
+                        <label for="name"></label>
+                        <input type="text" id="name" required placeholder="Your Name" name="user_name">
+                        <label for="mail"></label>
+                        <input type="email" required id="mail" placeholder=" Your E-mail" name="user_email">
+                        <label for="form_title"></label>
+                    </div>
+                    <div class="form_for_title">
+                        <textarea id="form_title" required placeholder="Your Title" name="user_title"></textarea>
+                    </div>
+                    <div class="form_for_comment">
+                        <label for="form_comment"></label>
+                        <textarea id="form_comment" required placeholder="Your Comment" name="user_comment"></textarea>
+                    </div>
+                    <div class="submit">
+                        <button class="mail-btn" type="submit">Send</button>
+                    </div>
+                    <p class="message-box"></p>
                 </form>
             </section>
         </section>
@@ -150,6 +153,10 @@
             </p>
         </div>
     </footer>
+
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script  src="jquery/jquery.fancybox.js"></script>
+    <script  src="jquery/fancybox-thumbs.js"></script>
     <script src="js/index.js"></script>
 </body>
 
