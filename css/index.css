@@ -3,16 +3,18 @@ body {
     max-width: 1280px;
     margin: auto;
 }
-
-.work_portfolio_carousel {
+.owl-theme .owl-nav.disabled+.owl-dots{
+    display: none;
+}
+.owl-carousel .work_portfolio_carousel {
     display: none;
 }
 
-.work_travel_carousel {
+.owl-carousel .work_travel_carousel {
     display: none;
 }
 
-.work_newspaper_carousel {
+.owl-carousel .work_newspaper_carousel {
     display: none;
 
 }
@@ -243,8 +245,8 @@ header .link_header li a:hover {
 }
 
 #name {
-    margin: 0rem 2rem 1.5rem 0;
-    padding: 0 4rem 0 0;
+    margin: 0rem 2rem 1.5rem 2rem;
+    /*padding: 0 4rem 0 0;*/
     height: 25px;
     border: 1px solid rgba(255, 255, 255, .6);
     border-radius: 4px;
@@ -252,8 +254,8 @@ header .link_header li a:hover {
 }
 
 #mail {
-    margin: 0 2rem 1.5rem 0;
-    padding: 0 4rem 0 0;
+    margin: 0 2rem 1.5rem 2rem;
+    /*padding: 0 4rem 0 0;*/
     height: 25px;
     border: 1px solid rgba(255, 255, 255, .6);
     border-radius: 4px;
@@ -269,8 +271,8 @@ header .link_header li a:hover {
 #form_title {
     border: 1px solid rgba(255, 255, 255, .6);
     border-radius: 4px;
-    margin: 0rem 2rem 1.5rem 0;
-    padding: 0 21rem 0 0;
+    margin: 0rem 2rem 1.5rem 2rem;
+    /*padding: 0 21rem 0 0;*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -282,8 +284,7 @@ header .link_header li a:hover {
 #form_comment {
     border: 1px solid rgba(255, 255, 255, .6);
     border-radius: 4px;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    margin: 0rem 2rem 1.5rem 2rem;
     padding: 0 21rem 6rem 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -508,6 +509,10 @@ header .link_header li a:hover {
 }
 
 @media (max-width:420px) {
+    .owl-theme .owl-nav.disabled+.owl-dots{
+        display: block;
+    }
+
     .main-carousel {
         visibility: visible;
     }
@@ -532,13 +537,13 @@ header .link_header li a:hover {
         justify-content: center;
         color: #696969;
     }
-    .text_travel_carousel {
+    .owl-carousel .text_travel_carousel {
         display: flex;
         justify-content: center;
         color: #696969;
     }
 
-    .work_travel_carousel {
+    .owl-carousel .work_travel_carousel {
         padding: 0 0.5rem;
         margin: 0 1rem;
         display: flex;
@@ -547,16 +552,15 @@ header .link_header li a:hover {
         flex-direction: column;
         justify-content: center;
     }
-    .work_portfolio_carousel {
+    .owl-carousel .work_portfolio_carousel {
         padding: 0 0.5rem;
         margin: 0 1rem;
         display: flex;
         justify-content: center;
         color: #696969;
         flex-direction: column;
-        justify-content: center;
     }
-    .work_newspaper_carousel {
+    .owl-carousel .work_newspaper_carousel {
         margin: 0 1rem;
         padding: 0 0.5rem;
         display: flex;
